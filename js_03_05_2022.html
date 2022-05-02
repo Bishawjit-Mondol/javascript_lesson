@@ -1,13 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS Lesson</title>
 </head>
+
 <body>
     <h1>I am Javascript</h1>
-    
+    <p id="dataId"></p>
+    <button onclick="personalINfo()">CLICK</button>
+    <script>
+        // JS objects
+        const myInfo = {
+            name: "Bishawjit",
+            age: 23,
+            place: "Dhaka",
+            occupation: "Developer",
+            interest: "Chess"
+        };
+
+        //Show data on dataId
+        function personalINfo() {
+            document.getElementById('dataId').innerHTML = 'I am ' + myInfo.name +
+                ' who lives in ' + myInfo.place + '. I am a ' + myInfo.occupation + '.';
+        }
+    </script>
 </body>
+
 </html>
