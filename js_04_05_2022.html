@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Lesson</title>
+</head>
+
+<body>
+    <h1>STRING ESCAPE BY BACKSLASH (\)</h1>
+    <p id="strId"></p>
+    <button onclick="showData()">CLICK</button>
+    <script>
+        // By using baclslash (\) we can escape singlr or double quote as needed.
+        function showData() {
+            let str1 = 'I am Joy. It\'s time to practice JS.';
+            let str2 = "I am \"Joy\". It's time to practice JS.";
+            let str3 = '\'I am \"Joy\".\'  It\'s time to practice JS.';
+            document.getElementById('strId').innerHTML = str1 + '<br>' + str2 + '<br>' + str3;
+        }
+    </script>
+</body>
+
+</html>
